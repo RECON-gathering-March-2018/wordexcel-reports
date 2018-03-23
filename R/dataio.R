@@ -1,6 +1,8 @@
 library(tidyverse)
 library(incidence)
 
+setwd(here::here())
+
 linelist <- openxlsx::read.xlsx("../data/MERS-CoV-cases-rok-21Jul15.xlsx",startRow=4)
 
 ##Convert all columns containing the String "...Date..." to the Date class
