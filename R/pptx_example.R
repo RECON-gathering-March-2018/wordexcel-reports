@@ -1,5 +1,8 @@
 library(officer)
 library(mschart)
+library(tidyverse)
+library(incidence)
+library(rvg)
 
 my_pres <- read_pptx()
 
@@ -20,8 +23,6 @@ my_pres <- my_pres %>%
 
 
 #####
-library(tidyverse)
-library(incidence)
 
 setwd(here::here())
 
